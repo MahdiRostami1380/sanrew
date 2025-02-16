@@ -18,6 +18,11 @@
   src: url("../../public/Fonts/Digikala_font.ttf");
 }
 
+@font-face {
+  font-family: Peyda;
+  src: url("../../public/Fonts/Peyda-Medium.ttf");
+}
+
 .test {
   color: #ffbe0b;
   color: #fb5607;
