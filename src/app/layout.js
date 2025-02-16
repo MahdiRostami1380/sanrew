@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body
-        style={{ fontFamily: "Peyda" }}
+        style={{ fontFamily: "Digikala" }}
         className="selection:bg-[#ff006e] selection:bg-opacity-50"
       >
         {children}
