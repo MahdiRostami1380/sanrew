@@ -13,6 +13,11 @@
   src: url("../../public/Fonts/irsans.ttf");
 }
 
+@font-face {
+  font-family: Digikala;
+  src: url("../../public/Fonts/Digikala_font.ttf");
+}
+
 .test {
   color: #ffbe0b;
   color: #fb5607;

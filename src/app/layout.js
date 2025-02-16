@@ -1,15 +1,15 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Naris Shop",
-  description: "Naris Accessories",
+  title: "Sanrew",
+  description: "Sanrew Accessories",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body
-        style={{ fontFamily: "IranSans" }}
+        style={{ fontFamily: "Digikala" }}
         className="selection:bg-[#ff006e] selection:bg-opacity-50"
       >
         {children}
