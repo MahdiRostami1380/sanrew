@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex h-20 items-center justify-center bg-black text-lg text-[#fb5607]">
-        ساخته شده💖توسط سانریو
+        ساخته شده💖توسط شوهر ناریس
       </div>
     </footer>
   );
