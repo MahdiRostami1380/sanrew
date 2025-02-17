@@ -31,7 +31,7 @@
   color: #3a86ff;
 }
 
-.linearbg {
+.bg-clip-text-style {
   background-clip: text;
   -webkit-background-clip: text;
 }

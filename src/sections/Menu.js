@@ -13,11 +13,11 @@ const Menu = () => {
       <div className="hidden md:flex md:gap-5 lg:gap-10">
         <nav className="flex items-center md:gap-5 lg:gap-10">
           {navItems.map((navItem, index) => (
-            <div>
+            <div key={index}>
               {navItem.seprator ? (
-                <div key={index} className="h-3 w-[1px] bg-[#a1a5ae]"></div>
+                <div className="h-3 w-[1px] bg-[#a1a5ae]"></div>
               ) : (
-                <Link key={index} href={navItem.link}>
+                <Link href={navItem.link}>
                   <div className="text-[#ff006e] text-xl duration-500 hover:text-[#8338ec]">
                     {navItem.title}
                   </div>
