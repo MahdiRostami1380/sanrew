@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="mt-32">
       <div className="bg-[#ff006e] bg-opacity-20 py-10">
-        <div className="section-container xl:max-w-[1280px] flex justify-between items-center md:items-start flex-col md:flex-row gap-4">
+        <div className="section-container xl:max-w-[1280px] flex justify-between items-center md:items-start flex-col md:flex-row gap-7">
           {footerItems.map((item, index) => (
             <div key={index} className="flex flex-col gap-4">
               <h3 className="text-xl">{item.subject}</h3>
