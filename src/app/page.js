@@ -1,4 +1,4 @@
-import Footer from "@/sections/footer";
+import Footer from "@/sections/Footer";
 import Main from "@/sections/Main";
 import Menu from "@/sections/Menu";
 
