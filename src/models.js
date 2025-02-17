@@ -1,30 +1,26 @@
 import { FaTelegram, FaSquareInstagram } from "react-icons/fa6";
 
 export const navItems = [
-  { title: "آیتم", link: "./" },
-  { title: "آیتم", link: "./" },
+  { title: "محصولات", link: "./" },
   { seprator: true },
-  { title: "آیتم", link: "./" },
-  { title: "آیتم", link: "./" },
-  { title: "آیتم", link: "./" },
-  { title: "آیتم", link: "./" },
+  { title: "ارتباط با ما", link: "./" },
+  { title: "درباره ما", link: "./" },
 ];
 
 export const categories = [
-  { title: "کتگوری", value: "1" },
-  { title: "کتگوری", value: "2" },
-  { title: "کتگوری", value: "3" },
-  { title: "کتگوری", value: "4" },
-  { title: "کتگوری", value: "5" },
+  { title: "همه", value: "all" },
+  { title: "گل‌سر", value: "hair slide" },
+  { title: "لوازم‌التحریر", value: "stationery" },
+  { title: "جواهرات", value: "jewellery" },
 ];
 
 export const footerItems = [
   {
     subject: "محصولات",
     items: [
-      { title: "آیتم اول", link: "./" },
-      { title: "آیتم اول", link: "./" },
-      { title: "آیتم اول", link: "./" },
+      { title: "گل‌سر", link: "./" },
+      { title: "لوازم‌التحریر", link: "./" },
+      { title: "جواهرات", link: "./" },
     ],
   },
   {
@@ -41,5 +37,24 @@ export const footerItems = [
       { title: "تلگرام", link: "https://t.me/naris666", icon: <FaTelegram /> },
       { title: "اینستاگرام", link: "./", icon: <FaSquareInstagram /> },
     ],
+  },
+];
+
+export const sortByItems = [
+  {
+    title: "محبوب‌ترین‌ها",
+    value: "populars",
+  },
+  {
+    title: "اخیرا",
+    value: "most-recent",
+  },
+  {
+    title: "ارزان‌ به گران",
+    value: "low-to-high",
+  },
+  {
+    title: "گران به ارزان",
+    value: "high-to-low",
   },
 ];

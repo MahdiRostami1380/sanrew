@@ -27,9 +27,9 @@ const Menu = () => {
           ))}
         </nav>
         <div className="flex md:gap-5 lg:gap-10 items-center">
-          <HiMagnifyingGlass size={30} />
-          <HiOutlineShoppingBag size={30} />
-          <MdApps size={30} />
+          <HiMagnifyingGlass size={30} className="cursor-pointer" />
+          <HiOutlineShoppingBag size={30} className="cursor-pointer" />
+          <MdApps size={30} className="cursor-pointer" />
         </div>
       </div>
       <RxHamburgerMenu size={30} className="md:hidden" />
