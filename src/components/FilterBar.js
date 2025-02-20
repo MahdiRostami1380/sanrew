@@ -18,8 +18,8 @@ const FilterBar = () => {
     });
   }, []);
   return (
-    <div>
-      <div className="flex justify-between items-center mt-16 select-none">
+    <div className="mt-16 select-none">
+      <div className="flex justify-between items-center">
         <div
           className="flex relative items-center gap-2 cursor-pointer"
           onClick={() => setSortByMenu(true)}

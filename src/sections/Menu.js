@@ -6,9 +6,9 @@ import { MdApps } from "react-icons/md";
 
 const Menu = () => {
   return (
-    <div className="section-container fixed left-0 right-0 top-0 backdrop-blur-sm flex items-center justify-between h-20 select-none">
+    <div className="section-container fixed left-0 right-0 top-0 backdrop-blur-sm flex items-center justify-between h-20 select-none z-10">
       <Link href={"/"}>
-        <img src="./logo.png" alt="logo" className="h-8 md:h-10 lg:h-12" />
+        <img src="/logo.png" alt="logo" className="h-8 md:h-10 lg:h-12" />
       </Link>
       <div className="hidden md:flex md:gap-5 lg:gap-10">
         <nav className="flex items-center md:gap-5 lg:gap-10">

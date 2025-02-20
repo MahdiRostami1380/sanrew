@@ -34,7 +34,7 @@ export const footerItems = [
   {
     subject: "ما را دنبال کنید",
     items: [
-      { title: "تلگرام", link: "https://t.me/naris666", icon: <FaTelegram /> },
+      { title: "تلگرام", link: "https://t.me/sannriow", icon: <FaTelegram /> },
       { title: "اینستاگرام", link: "./", icon: <FaSquareInstagram /> },
     ],
   },
