@@ -19,7 +19,7 @@ const AccordionItem = ({ item, itemState = 3, setItemState }) => {
         )}
       </div>
       {item.id === itemState && (
-        <p className="text-sm md:text-xl lg:text-2xl mt-3 md:mt-5">
+        <p className="text-sm md:text-xl lg:text-2xl mt-3 md:mt-5 mb-3 md:mb-7">
           {item.answer}
         </p>
       )}
