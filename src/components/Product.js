@@ -6,7 +6,7 @@ const Product = ({ product }) => {
       <img src={product.thumbnail} alt={product.name} className="w-full" />
       <h2 className="mt-5 text-xl md:text-3xl">{product.name}</h2>
       <h3 className="text-sm">
-        <b>{product.price}</b> هزار تومان
+        <b>{new Intl.NumberFormat("fa-IR").format(product.price)}</b> هزار تومان
       </h3>
       {product.count > 0 ? (
         <b className="text-[#8338ec]">موجود</b>

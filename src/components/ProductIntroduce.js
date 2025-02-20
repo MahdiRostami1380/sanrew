@@ -7,7 +7,7 @@ const ProductIntroduce = ({ product }) => {
         <img src={product.thumbnail} alt={product.name} />
       </div>
       <div className="flex flex-col justify-between flex-1">
-        <div className="flex flex-col gap-3 mb-3 md:mb-0">
+        <div className="flex flex-col gap-3 md:gap-5 mb-3 md:mb-0">
           <div className="flex gap-3">
             {product.categories.map((category, index) => (
               <div key={index} className="text-[#3a86ff] md:text-[18px]">
@@ -18,7 +18,10 @@ const ProductIntroduce = ({ product }) => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl">{product.name}</h1>
           <div className="flex gap-3 text-[18px]">
             <div>
-              امتیاز: <span className="text-[#8338ec]">{product.rating}</span>
+              امتیاز:{" "}
+              <span className="text-[#8338ec]">
+                {new Intl.NumberFormat("fa-IR").format(product.rating)}
+              </span>
             </div>
             <div>|</div>
             <div>اینجا ستاره ها نمایش داده می‌شود</div>

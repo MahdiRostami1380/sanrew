@@ -28,11 +28,11 @@ const FilterBar = () => {
           <div className="md:text-lg">مرتب سازی</div>
           <FaChevronDown size={12} />
           {sortByMenu && (
-            <div className="absolute top-full right-0 border-slate-950 border bg-slate-50 px-3 py-2 flex flex-col cursor-default">
+            <div className="absolute top-full right-0 border-slate-950 border bg-slate-50 flex flex-col cursor-default rounded-sm w-[150px]">
               {sortByItems.map((item, index) => (
                 <div
                   key={index}
-                  className="cursor-pointer hover:bg-pink-300 px-2 py-1 rounded-md text-[#8338ec]"
+                  className="cursor-pointer hover:bg-pink-100 px-3 py-3 text-[#ff006e] hover:text-[#8338ec] transition"
                 >
                   {item.title}
                 </div>
