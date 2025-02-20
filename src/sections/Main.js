@@ -2,6 +2,7 @@ import FilterBar from "@/components/FilterBar";
 import Header from "@/components/Header";
 import Products from "@/components/Products";
 import { fetchProducts } from "@/actions/FetchProducts";
+import Accordion from "@/components/Accordion";
 
 const Main = async () => {
   const products = await fetchProducts();
@@ -10,6 +11,7 @@ const Main = async () => {
       <Header />
       <FilterBar />
       <Products products={products} />
+      <Accordion />
     </main>
   );
 };

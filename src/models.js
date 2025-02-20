@@ -58,3 +58,14 @@ export const sortByItems = [
     value: "high-to-low",
   },
 ];
+
+export const accordionItems = [
+  { ask: "آیا در صورت راضی نبودن امکان عودت محصول است؟", answer: "نه", id: 0 },
+  { ask: "آیا تخفیف می‌دهید؟", answer: "نه", id: 1 },
+  { ask: "آیا مورد اطمینان هستید؟", answer: "آره", id: 2 },
+  {
+    ask: "زمان تحویل محصول بعد از سفارش چند روز است؟",
+    answer: "نمیدونم",
+    id: 3,
+  },
+];

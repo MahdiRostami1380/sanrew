@@ -5,9 +5,9 @@ const Product = ({ product }) => {
     <Link href={`/products/${product.id}`}>
       <img src={product.thumbnail} alt={product.name} className="w-full" />
       <h2 className="mt-5 text-xl md:text-3xl">{product.name}</h2>
-      <h3 className="text-sm">
+      <p className="text-sm">
         <b>{new Intl.NumberFormat("fa-IR").format(product.price)}</b> هزار تومان
-      </h3>
+      </p>
       {product.count > 0 ? (
         <b className="text-[#8338ec]">موجود</b>
       ) : (

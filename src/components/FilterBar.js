@@ -1,7 +1,7 @@
 "use client";
 
 import { categories, sortByItems } from "@/models";
-import { FaChevronDown } from "react-icons/fa";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { useState, useRef, useEffect } from "react";
 
@@ -21,12 +21,12 @@ const FilterBar = () => {
     <div className="mt-16 select-none">
       <div className="flex justify-between items-center">
         <div
-          className="flex relative items-center gap-2 cursor-pointer"
+          className="flex relative items-center gap-1 cursor-pointer"
           onClick={() => setSortByMenu(true)}
           ref={sortBy}
         >
           <div className="md:text-lg">مرتب سازی</div>
-          <FaChevronDown size={12} />
+          {sortByMenu ? <HiChevronUp size={20} /> : <HiChevronDown size={20} />}
           {sortByMenu && (
             <div className="absolute top-full right-0 border-slate-950 border bg-slate-50 flex flex-col cursor-default rounded-sm w-[150px]">
               {sortByItems.map((item, index) => (
