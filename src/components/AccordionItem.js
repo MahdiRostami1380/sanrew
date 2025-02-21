@@ -10,7 +10,7 @@ const AccordionItem = ({ item, itemState = 3, setItemState }) => {
         item.id === itemState ? setItemState(null) : setItemState(item.id);
       }}
     >
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between items-center w-full">
         <h3 className="text-[#8338ec] md:text-3xl lg:text-4xl">{item.ask}</h3>
         {item.id === itemState ? (
           <HiChevronUp className="text-slate-600 text-base md:text-3xl lg:text-4xl" />
