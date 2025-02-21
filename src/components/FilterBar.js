@@ -28,7 +28,7 @@ const FilterBar = () => {
           <div className="md:text-lg">مرتب سازی</div>
           {sortByMenu ? <HiChevronUp size={20} /> : <HiChevronDown size={20} />}
           {sortByMenu && (
-            <div className="absolute top-full right-0 border-slate-950 border bg-slate-50 flex flex-col cursor-default rounded-sm w-[150px]">
+            <div className="absolute top-full right-0 border-[#ff006e] border bg-slate-50 flex flex-col cursor-default rounded-sm w-[150px]">
               {sortByItems.map((item, index) => (
                 <div
                   key={index}

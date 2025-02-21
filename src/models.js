@@ -28,7 +28,6 @@ export const footerItems = [
     items: [
       { title: "درباره ما", link: "./" },
       { title: "ارتباط با ما", link: "./" },
-      { title: "مشاغل", link: "./" },
     ],
   },
   {
