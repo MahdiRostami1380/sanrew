@@ -9,7 +9,7 @@ const Main = async () => {
   return (
     <main className="section-container mt-32 xl:max-w-[1280px]">
       <Header />
-      <FilterBar />
+      {/* <FilterBar /> */}
       <Products products={products} />
       <Accordion />
     </main>

@@ -11,7 +11,7 @@ export const categories = [
   { title: "همه", value: "all" },
   { title: "گل‌سر", value: "hair slide" },
   { title: "لوازم‌التحریر", value: "stationery" },
-  { title: "جواهرات", value: "jewellery" },
+  { title: "گردنبند", value: "necklace" },
 ];
 
 export const footerItems = [
@@ -67,4 +67,8 @@ export const accordionItems = [
     answer: "نمیدونم",
     id: 3,
   },
+];
+
+export const sidebarItems = [
+  { title: "اضافه کردن محصول", value: "add product" },
 ];
