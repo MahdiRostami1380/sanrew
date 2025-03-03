@@ -9,7 +9,6 @@ export default function AddProduct() {
         type="submit"
         className="bg-slate-950 py-3 rounded-md text-slate-50"
       >
-        {" "}
         {status.pending ? "در حال اضافه کردن..." : "اضافه کردن"}
       </button>
     );
@@ -19,7 +18,17 @@ export default function AddProduct() {
       <h1 className="mb-5 text-2xl w-fit text-transparent bg-gradient-to-r from-fuchsia-400 to-fuchsia-900 bg-clip-text font-extrabold">
         ناریس دوستت دارم ❤
       </h1>
-      <form action={(e) => addProductAction(e)} className="flex flex-col gap-5">
+      <form
+        action={async (e) => {
+          let product = await addProductAction(e);
+          if (product.success) {
+            alert("اضافه شد");
+          } else {
+            alert("خطا رخ داد");
+          }
+        }}
+        className="flex flex-col gap-5"
+      >
         <input
           type="text"
           name="name"

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setProducts } from "@/GlobalRedux/features/ProductsSlice";
 
-const Products = ({ products }) => {
+const Products = ({ products = [] }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {

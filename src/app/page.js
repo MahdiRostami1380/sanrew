@@ -1,3 +1,4 @@
+import { addAdminAction } from "@/actions/AddAmin";
 import Footer from "@/sections/Footer";
 import Main from "@/sections/Main";
 import Menu from "@/sections/Menu";

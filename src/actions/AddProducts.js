@@ -28,4 +28,6 @@ export async function addProductAction(e) {
 
   const product = await response.json();
   console.log(product);
+
+  return product;
 }
