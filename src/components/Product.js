@@ -8,7 +8,7 @@ const Product = ({ product }) => {
         alt={product.name}
         className="w-full"
       />
-      <h2 className="mt-5 text-xl md:text-3xl">{product.name}</h2>
+      <h2 className="mt-5 text-xl md:text-2xl">{product.name}</h2>
       <p className="text-sm">
         <b>{new Intl.NumberFormat("fa-IR").format(product.price)}</b> هزار تومان
       </p>
