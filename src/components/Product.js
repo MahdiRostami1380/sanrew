@@ -8,8 +8,10 @@ const Product = ({ product }) => {
         alt={product.name}
         className="w-full"
       />
-      <h2 className="mt-5 text-xl md:text-2xl">{product.name}</h2>
-      <p className="text-sm">
+      <h2 className="mt-5 text-sm md:text-2xl mb-3 md:mb-5 leading-4 md:leading-7">
+        {product.name}
+      </h2>
+      <p className="text-[10px] md:text-sm">
         <b>{new Intl.NumberFormat("fa-IR").format(product.price)}</b> هزار تومان
       </p>
       {product.count > 0 ? (
