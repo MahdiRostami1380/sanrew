@@ -26,7 +26,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex h-20 items-center justify-center bg-black text-lg text-[#fb5607]">
-        ساخته شده💖توسط ناریس
+        <span className="text-[10px]">💙</span>
+        <span className="text-[14px]">❤</span>💖Naris💖
+        <span className="text-[14px]">❤</span>
+        <span className="text-[10px]">💙</span>
       </div>
     </footer>
   );
