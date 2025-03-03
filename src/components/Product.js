@@ -2,13 +2,13 @@ import Link from "next/link";
 
 const Product = ({ product }) => {
   return (
-    <Link href={`/products/${product.id}`} style={{ fontFamily: "IranSans" }}>
+    <Link href={`/products/${product.id}`} style={{ fontFamily: "Peyda" }}>
       <img
         src={product.thumbnail || "/gol_sar.jpg"}
         alt={product.name}
         className="w-full"
       />
-      <h2 className="mt-5 text-sm md:text-2xl mb-3 md:mb-5 leading-4 md:leading-7">
+      <h2 className="mt-5 text-sm md:text-2xl mb-3 md:mb-5 leading-4 md:leading-7 font-bold">
         {product.name}
       </h2>
       <p className="text-[10px] md:text-sm">
