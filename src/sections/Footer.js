@@ -26,10 +26,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex h-20 items-center justify-center bg-black text-lg text-[#fb5607]">
-        <span className="text-[10px]">💙</span>
+        <span className="text-[8px]">💙</span>
         <span className="text-[16px]">❤</span>💖Naris💖
         <span className="text-[16px]">❤</span>
-        <span className="text-[10px]">💙</span>
+        <span className="text-[8px]">💙</span>
       </div>
     </footer>
   );
