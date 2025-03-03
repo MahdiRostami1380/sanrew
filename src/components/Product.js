@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Product = ({ product }) => {
   return (
-    <Link href={`/products/${product.id}`}>
+    <Link href={`/products/${product.id}`} style={{ fontFamily: "IranSans" }}>
       <img
         src={product.thumbnail || "/gol_sar.jpg"}
         alt={product.name}

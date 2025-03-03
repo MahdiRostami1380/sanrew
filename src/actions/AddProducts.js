@@ -13,6 +13,7 @@ export async function addProductAction(e) {
   let price = e.get("price");
   let thumbnail = e.get("thumbnail");
   let count = e.get("count");
+  let codes = e.get("codes");
 
   const response = await fetch(`${proto}://${host}/api/addProduct`, {
     method: "POST",
@@ -22,6 +23,7 @@ export async function addProductAction(e) {
       price,
       thumbnail,
       count,
+      codes,
       id: generateRandomId(20),
     }),
   });

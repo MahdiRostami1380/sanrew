@@ -58,6 +58,12 @@ export default function AddProduct() {
           placeholder="کپشن"
           className="py-2 px-4 rounded resize-y min-h-40"
         />
+        <input
+          type="text"
+          name="codes"
+          placeholder="تعداد کدها"
+          className="py-2 px-4 rounded"
+        />
         <Submit />
       </form>
     </section>

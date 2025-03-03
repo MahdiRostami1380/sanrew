@@ -7,6 +7,7 @@ const ProductSchema = new mongoose.Schema({
   id: String,
   thumbnail: String,
   count: Number,
+  codes: Number,
 });
 
 const Product =
