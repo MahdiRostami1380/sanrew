@@ -25,14 +25,18 @@ export default function SeeProducts() {
           return (
             <div
               key={index}
-              className="bg-white rounded w-full px-10 py-4 flex justify-between items-center"
+              className="bg-white rounded w-full px-3 py-1 md:px-10 md:py-4 flex justify-between items-center"
             >
-              <h2 className="text-2xl" style={{ fontFamily: "IranSans" }}>
+              <h2
+                className="text-sm md:text-2xl"
+                style={{ fontFamily: "IranSans" }}
+              >
                 {product.name}
               </h2>
               <div className="flex gap-5 items-center text-2xl cursor-pointer">
                 <MdDelete
                   title="حذف کردن"
+                  className="text-base md:text-2xl"
                   onClick={() => {
                     deleteProduct(product);
                     fetchProductsFromAPI();
@@ -44,7 +48,7 @@ export default function SeeProducts() {
                     query: product,
                   }}
                 >
-                  <FaEdit className="text-2xl" title="ویرایش" />
+                  <FaEdit className="text-base md:text-2xl" title="ویرایش" />
                 </Link>
               </div>
             </div>

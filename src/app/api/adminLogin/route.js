@@ -6,6 +6,7 @@ export async function POST(request) {
   const admin = await request.json();
 
   try {
+    connectToDB();
     const adminResponse = await Admin.findOne({ username: admin.username });
 
     if (adminResponse) {
