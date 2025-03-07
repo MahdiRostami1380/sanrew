@@ -1,5 +1,5 @@
-import connectToDB from "@/DB";
 import Product from "@/mongoDBModels/product";
+import connectToDB from "@/DB";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -7,20 +7,20 @@ export async function POST(request) {
 
   try {
     connectToDB();
-    const productResponse = await Product.create(product);
+    const productResponse = await Product.deleteOne({ name: product.name });
 
     if (productResponse) {
-      return NextResponse.json({ message: "Product Added", success: true });
+      return NextResponse.json({ message: "Product Deleted", success: true });
     } else {
       return NextResponse.json({
-        message: "Product Didn't Added",
+        message: "Product Didn't Deleted",
         success: false,
       });
     }
   } catch (error) {
     console.log(error);
     return NextResponse.json({
-      message: "Product Didn't Added",
+      message: "Product Didn't Deleted",
       success: false,
     });
   }
