@@ -3,9 +3,9 @@
 import { editProduct } from "@/actions/EditProduct";
 import { redirect, useSearchParams } from "next/navigation";
 import { useFormStatus } from "react-dom";
-import { useState, Suspense } from "react";
+import { useState } from "react";
 
-function Search() {
+export default function Edit() {
   const searchParams = useSearchParams();
   const [name, setName] = useState(searchParams.get("name"));
   const [caption, setCaption] = useState(searchParams.get("caption"));
@@ -95,13 +95,5 @@ function Search() {
         <Submit />
       </form>
     </section>
-  );
-}
-
-export default function Edit() {
-  return (
-    <Suspense>
-      <Search />
-    </Suspense>
   );
 }
